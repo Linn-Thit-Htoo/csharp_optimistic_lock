@@ -17,7 +17,7 @@ public class Program
 
             var dbContext = serviceProvider.GetService<AppDbContext>();
 
-            BlogDbService blogDbService = new(dbContext);
+            BlogDbService blogDbService = new(dbContext!);
             //await blogDbService.AddAsync(new AddBlogRequestModel()
             //{
             //    BlogTitle = "Blog Title 1",
